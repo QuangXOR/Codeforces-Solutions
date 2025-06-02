@@ -6,7 +6,7 @@ int t;
 void solve(int n, string s) {
     string ans = "Alice";
 
-    int cA=0, cB=0;
+    int cB=0;
     for (int i=0; i<n; i++) {
         if (s[i] == 'A') {
             if (i==n-1 && s[0] != 'B') {
@@ -15,7 +15,6 @@ void solve(int n, string s) {
 
             else if (i!=n-1) {
                 ans = "Alice";
-                cA++;
             }
         }
 
